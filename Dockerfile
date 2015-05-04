@@ -3,7 +3,7 @@ MAINTAINER Richard Liu "richardxxx0x@gmail.com"
 
 # add golang repository
 RUN apt-get update
-RUN apt-get install -y python-software-properties
+RUN apt-get install -y python-software-properties software-properties-common
 RUN add-apt-repository ppa:gophers/go
 
 # add mongodb repository
