@@ -13,7 +13,7 @@ RUN echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-or
 RUN apt-get -y install golang mongodb
 
 # install git and openssh
-RUN apt-get install git-core mercurial openssh-server openssh-client
+RUN apt-get install -y git-core mercurial openssh-server openssh-client
 
 # fetch revel and leanote
 RUN go get github.com/revel/cmd/revel
