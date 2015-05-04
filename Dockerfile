@@ -10,8 +10,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 RUN echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb.list
 
 # install golang and mongodb
-RUN apt-get -y install golang
-RUN apt-get install -y mongodb-org=3.0.0 mongodb-org-server=3.0.0 mongodb-org-shell=3.0.0 mongodb-org-mongos=3.0.0 mongodb-org-tools=3.0.0
+RUN apt-get -y install golang mongodb
 
 # install git and openssh
 RUN apt-get install git-core mercurial openssh-server openssh-client
